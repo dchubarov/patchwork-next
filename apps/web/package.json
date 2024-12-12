@@ -1,0 +1,26 @@
+{
+  "name": "@patchwork/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "rebuild": "rm -rf ./.next && next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "catalog:next",
+    "react": "catalog:react",
+    "react-dom": "catalog:react"
+  },
+  "devDependencies": {
+    "@types/react": "catalog:react",
+    "@types/react-dom": "catalog:react",
+    "typescript": "catalog:",
+    "eslint-config-next": "catalog:next",
+    "postcss": "catalog:tailwindcss",
+    "@tailwindcss/postcss": "catalog:tailwindcss",
+    "tailwindcss": "catalog:tailwindcss"
+  }
+}

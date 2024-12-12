@@ -1,0 +1,20 @@
+{
+  "name": "patchwork-next",
+  "version": "1.0.0",
+  "license": "AGPL-3.0",
+  "description": "",
+  "author": {
+    "name": "Dmitry Chubarov",
+    "email": "dime@twowls.org"
+  },
+  "scripts": {
+    "biome": "biome check --write"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@eslint/eslintrc": "^3.2.0",
+    "@types/node": "^22",
+    "eslint": "^9"
+  },
+  "packageManager": "pnpm@9.15.0"
+}
