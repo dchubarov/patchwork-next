@@ -1,7 +1,9 @@
 export default function LandingPage() {
   return (
-    <div className="p-4 text-center">
-      <p>Pretty blank canvas</p>
+    <div>
+      {[...Array(140)].map((_, index) => (
+        <p key={index}>Pretty blank canvas</p>
+      ))}
     </div>
   );
 }
