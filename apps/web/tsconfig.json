@@ -20,6 +20,8 @@
     ],
     "paths": {
       "@/components/*": ["./src/components/*"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/providers/*": ["./src/providers/*"],
       "@/styles/*": ["./src/styles/*"]
     }
   },

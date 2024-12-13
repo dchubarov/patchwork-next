@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { SidebarPlacement } from "@/lib/layout";
+import clsx from "clsx";
 
 function Divider() {
   return <hr />;
@@ -52,9 +54,17 @@ function WidgetHost() {
   );
 }
 
-export default function Sidebar() {
+export default function Sidebar({
+  placement,
+}: { placement: SidebarPlacement }) {
   return (
-    <div className="h-full py-2 pl-2">
+    <div
+      className={clsx(
+        "h-full py-2",
+        placement === "left" && "pl-2",
+        placement === "right" && "pr-2",
+      )}
+    >
       <div className="flex flex-col h-full z-10 overflow-x-clip overflow-y-auto scrollbar-thin rounded-lg bg-slate-50 border-slate-500 border-1 shadow-sm">
         <Header />
         <WidgetHost />

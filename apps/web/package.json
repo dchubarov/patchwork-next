@@ -10,17 +10,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.14.4",
     "next": "catalog:next",
     "react": "catalog:react",
     "react-dom": "catalog:react"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "catalog:tailwindcss",
     "@types/react": "catalog:react",
     "@types/react-dom": "catalog:react",
-    "typescript": "catalog:",
     "eslint-config-next": "catalog:next",
     "postcss": "catalog:tailwindcss",
-    "@tailwindcss/postcss": "catalog:tailwindcss",
-    "tailwindcss": "catalog:tailwindcss"
+    "tailwindcss": "catalog:tailwindcss",
+    "typescript": "catalog:"
   }
 }
