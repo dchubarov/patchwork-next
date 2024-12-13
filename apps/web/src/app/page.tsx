@@ -14,7 +14,7 @@ export default function LandingPage() {
           <SwapSidebarButton />
         </div>
         {[...Array(140)].map((_, index) => (
-          <p key={index}>Pretty blank canvas</p>
+          <p key={index}>Pretty blank canvas // Начиная с чистого листа</p>
         ))}
       </div>
     </>

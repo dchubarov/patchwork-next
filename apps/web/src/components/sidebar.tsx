@@ -21,14 +21,14 @@ function Logo() {
 
 function Header() {
   return (
-    <div className="px-4 pt-4 top-0 sticky z-20 backdrop-blur-xs">
+    <div className="px-4 pt-4 top-0 sticky z-20 backdrop-blur-sm">
       <div className="flex flex-nowrap items-center gap-2">
         <Logo />
-        <p className="grow text-2xl whitespace-nowrap overflow-hidden text-ellipsis">
+        <p className="grow text-xl font-semibold whitespace-nowrap overflow-hidden text-ellipsis">
           Annoyingly very long title
         </p>
       </div>
-      <div className="mt-3">Pinned widget</div>
+      <div className="mt-5 pb-2 text-sm">Pinned widget</div>
       <Divider />
     </div>
   );
@@ -36,17 +36,19 @@ function Header() {
 
 function Footer() {
   return (
-    <div className="px-4 pb-3 bottom-0 sticky z-20 backdrop-blur-xs">
+    <div className="px-4 pb-3 bottom-0 sticky z-20 backdrop-blur-sm text-sm">
       <Divider />
-      <p>User name</p>
-      <p>User email</p>
+      <div className="pt-2">
+        <p className="font-semibold">User name</p>
+        <p className="text-xs italic">user@acme.corp</p>
+      </div>
     </div>
   );
 }
 
 function WidgetHost() {
   return (
-    <div className="grow">
+    <div className="grow text-sm mx-4 flex flex-col gap-2">
       {[...Array(100)].map((_, index) => (
         <div key={index}>Sidebar widget #{index + 1}</div>
       ))}
@@ -65,7 +67,13 @@ export default function Sidebar({
         placement === "right" && "pr-2",
       )}
     >
-      <div className="flex flex-col h-full z-10 overflow-x-clip overflow-y-auto scrollbar-thin rounded-lg bg-slate-50 border-slate-500 border-1 shadow-sm">
+      <div
+        className={clsx(
+          "flex flex-col h-full z-10 overflow-x-clip overflow-y-auto scrollbar-thin",
+          "bg-slate-300 border-slate-400 text-slate-800",
+          "rounded-md border-1 shadow-md shadow-gray-500/20",
+        )}
+      >
         <Header />
         <WidgetHost />
         <Footer />

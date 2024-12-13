@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import * as Layout from "@/components/layout";
 import "@/styles/globals.css";
 import LayoutProvider from "@/providers/LayoutProvider";
+import clsx from "clsx";
+import { fontCssClasses } from "@/styles/fonts";
 
 export const metadata: Metadata = {
   title: { template: "%s - Patchwork", default: "Patchwork" },
@@ -15,7 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full bg-white dark:bg-gray-900 antialiased">
+    <html
+      lang="en"
+      className={clsx(fontCssClasses(), "h-full bg-white dark:bg-gray-900")}
+    >
       <body className="h-full bg-white dark:bg-gray-900">
         <LayoutProvider>
           <Layout.Root>
