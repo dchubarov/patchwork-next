@@ -27,7 +27,8 @@
   "javascript": {
     "formatter": {
       "quoteStyle": "double",
-      "jsxQuoteStyle": "double"
+      "jsxQuoteStyle": "double",
+      "bracketSameLine": true
     }
   }
 }

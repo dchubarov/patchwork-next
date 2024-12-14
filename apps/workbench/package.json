@@ -12,6 +12,7 @@
   "dependencies": {
     "@headlessui/react": "^2.2.0",
     "clsx": "^2.1.1",
+    "cva": "npm:class-variance-authority@^0.7.1",
     "framer-motion": "^11.14.4",
     "next": "catalog:next",
     "react": "catalog:react",

@@ -40,7 +40,7 @@ function Footer() {
       <Divider />
       <div className="pt-2">
         <p className="font-semibold">User name</p>
-        <p className="text-xs italic">user@acme.corp</p>
+        <p className="text-xs italic">user@twowls.org</p>
       </div>
     </div>
   );
@@ -65,15 +65,13 @@ export default function Sidebar({
         "h-full py-2",
         placement === "left" && "pl-2",
         placement === "right" && "pr-2",
-      )}
-    >
+      )}>
       <div
         className={clsx(
           "flex flex-col h-full z-10 overflow-x-clip overflow-y-auto scrollbar-thin",
-          "bg-slate-300 border-slate-400 text-slate-800",
+          "bg-slate-300/95 border-slate-400 text-slate-700",
           "rounded-md border-1 shadow-md shadow-gray-500/20",
-        )}
-      >
+        )}>
         <Header />
         <WidgetHost />
         <Footer />

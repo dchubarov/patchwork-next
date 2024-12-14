@@ -1,11 +1,11 @@
 "use client";
 
 import { useInteractiveLayout } from "@/lib/layout";
-import { Button } from "@/components/button";
+import { Button } from "@/components/primitive/button";
 
 export function ToggleColorSchemeButton() {
   return (
-    <Button outline onClick={() => {}}>
+    <Button outline disabled onClick={() => {}}>
       Light/Dark
     </Button>
   );
@@ -27,8 +27,7 @@ export function SwapSidebarButton() {
       outline
       onClick={() =>
         configureSidebar(sidebarPlacement === "right" ? "left" : "right")
-      }
-    >
+      }>
       Swap sidebar
     </Button>
   );
