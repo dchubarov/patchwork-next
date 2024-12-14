@@ -57,7 +57,7 @@ importers:
         specifier: ^9.17.0
         version: 9.17.0(jiti@2.4.1)
 
-  apps/web:
+  apps/workbench:
     dependencies:
       '@headlessui/react':
         specifier: ^2.2.0

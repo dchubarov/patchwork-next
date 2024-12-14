@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="webapp-dev" type="js.build_tools.npm">
-    <package-json value="$PROJECT_DIR$/apps/web/package.json" />
+  <configuration default="false" name="workbench-debug" type="js.build_tools.npm">
+    <package-json value="$PROJECT_DIR$/apps/workbench/package.json" />
     <command value="run" />
     <scripts>
       <script value="dev" />
