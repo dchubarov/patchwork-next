@@ -3,6 +3,11 @@ import js from '@eslint/js';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import { FlatCompat } from '@eslint/eslintrc';
+
+const compat = new FlatCompat({
+  baseDirectory: import.meta.dirName,
+});
 
 export default defineConfig(
   /** @type {import('eslint').Linter.Config[]} */
@@ -27,5 +32,14 @@ export default defineConfig(
     },
     eslintPluginPrettierRecommended,
     tseslint.configs.recommended,
+
+    ...compat.config({
+      extends: ['next', 'next/core-web-vitals', 'next/typescript'],
+      settings: {
+        next: {
+          rootDir: 'apps/platform',
+        },
+      },
+    }),
   ]
 );
