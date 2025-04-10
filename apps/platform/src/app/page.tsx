@@ -1,9 +1,9 @@
-import { Button } from '@/components/ui/button';
+import { TypographyH1 } from '@/components/ui/typography';
 
 export default function Home() {
   return (
     <div>
-      <Button variant="outline">Click</Button>
+      <TypographyH1>Page content</TypographyH1>
     </div>
   );
 }
