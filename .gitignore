@@ -127,6 +127,7 @@ dist
 .idea/*
 !.idea/icon.svg
 !.idea/runConfigurations/
+*.iml
 
 # Mac OS
 .DS_Store
