@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 
 export default function Home() {
   return (
-    <div className="p-5">
+    <div>
       <Button variant="outline">Click</Button>
     </div>
   );
