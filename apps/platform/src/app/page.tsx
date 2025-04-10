@@ -1,11 +1,9 @@
-import Button from '@/components/button';
-import { Heading } from '@/components/heading';
+import { Button } from '@/components/ui/button';
 
 export default function Home() {
   return (
-    <div>
-      <Heading>Patchwork</Heading>
-      <Button outline>Button</Button>
+    <div className="p-5">
+      <Button variant="outline">Click</Button>
     </div>
   );
 }
